@@ -8,5 +8,88 @@
 }
 
 body {
-    background-color: aquamarine;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: blanchedalmond;
+}
+
+/* Colors -------------------------------------------------- */
+:root {
+    --white: #ffffff;
+    --orange: #FFA800;
+
+}
+
+
+/* Header styles -------------------------------------------- */
+header {
+    background-color: var(--white);
+    padding: 0 20px;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    margin-top: 0;
+}
+
+.header-logo {
+    display: block;
+    width: 78px;
+
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Menu styles --------------------------------------------- */
+.menu {
+    list-style-type: none;
+    font-size: 18px;
+    padding-bottom: 70px;
+    margin-top: auto;
+    vertical-align: top;
+    text-align: center;
+}
+
+.menu>li {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.languages {
+    text-align: center;
+}
+
+
+.active {
+    font-weight: bold;
+    border-bottom: 3px solid var(--orange);
+}
+
+/* Nav bar styles ------------------------------------------- */
+nav {
+    position: absolute;
+    background-color: var(--white);
+    width: 100%;
+    left: 0;
+    display: none;
+    top: 100%;
+}
+
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 1.5rem;
+    padding-top: 15px;
 }
