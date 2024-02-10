@@ -10,13 +10,14 @@
 body {
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
-    background-color: blanchedalmond;
+    background-color: var(--white);
 }
 
 /* Colors -------------------------------------------------- */
 :root {
     --white: #ffffff;
     --orange: #FFA800;
+    --dark-grey: #2F4858;
 
 }
 
@@ -29,7 +30,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    position: fixed;
+    position: relative;
     margin-top: 0;
 }
 
@@ -92,4 +93,36 @@ nav {
 .nav-toggle-label {
     font-size: 1.5rem;
     padding-top: 15px;
+}
+
+/* Main section ------------------------------------------- */
+
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 169px;
+
+}
+
+.btn-container {
+    position: absolute;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#main-pic {
+    background-image: url("../img/SparkleVideo1.png");
+}
+
+
+
+
+
+.description {
+    font-size: 12px;
+    color: var(--dark-grey);
+    text-align: center;
+    padding: 100px 20px;
 }
