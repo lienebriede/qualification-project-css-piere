@@ -99,22 +99,25 @@ nav {
 
 .hero {
     position: relative;
+    top: 0;
+    left: 0;
+}
+
+.video {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
-    min-height: 169px;
-
 }
 
-.btn-container {
+.play-btn {
     position: absolute;
-    min-height: 50px;
-    align-items: center;
-    justify-content: center;
+    top: 35%;
+    left: 45%;
 
 }
 
-#main-pic {
-    background-image: url("../img/SparkleVideo1.png");
-}
+
 
 
 
