@@ -7,18 +7,35 @@
     box-sizing: border-box;
 }
 
-body {
-    min-height: 100vh;
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--white);
-}
-
 /* Colors -------------------------------------------------- */
 :root {
     --white: #ffffff;
     --orange: #FFA800;
     --dark-grey: #2F4858;
 
+}
+
+/* General styles -------------------------------------------------- */
+body {
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--white);
+}
+
+h1,
+h2 {
+    font-family: 'Oswald', sans-serif;
+    color: var(--dark-grey);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 18px;
 }
 
 
@@ -117,15 +134,27 @@ nav {
 
 }
 
-
-
-
-
-
-
 .description {
     font-size: 12px;
     color: var(--dark-grey);
     text-align: center;
     padding: 100px 20px;
+}
+
+.button-area {
+    text-align: center;
+}
+
+.btn-wide {
+    width: 233px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 70px;
 }
