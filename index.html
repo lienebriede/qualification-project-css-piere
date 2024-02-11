@@ -82,8 +82,28 @@
             </div>
         </section>
         <!--Contact-->
-        <section class="contact-form">
+        <section class="contact">
+            <form class="contact-form" method="#" action="#">
+                <h1>Sazināties ar mums</h1>
 
+                <input type="text" name="name_surname" id="name_surname" class="text-input"
+                    placeholder="Vārds, Uzvārds*" required>
+                <br>
+
+                <input type="email" name="email" id="email" class="text-input" placeholder="E-pasts*" required>
+                <br>
+
+                <input type="tel" name="phone" id="phone" placeholder="Telefons*" required>
+                <br>
+                <textarea name="message" id="message" class="message" cols="40" rows="5"
+                    placeholder="Jautājums, vai komentārs*"></textarea>
+                <p>*obligāti aizpildāmie lauki</p>
+                <input type="checkbox" id="agree" name="agree" value="agree">
+                <p>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim,
+                    kamēr tas būs nepieciešams.</p>
+                <button class="button" type="submit">
+                    Sūtīt</button>
+            </form>
         </section>
         <section class="sponsors">
 
