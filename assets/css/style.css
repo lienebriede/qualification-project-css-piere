@@ -13,6 +13,7 @@
     --orange: #FFA800;
     --dark-grey: #2F4858;
     --light-grey: #C4C4C466;
+    --light-orange: #FFCB66;
 }
 
 /* General styles ------------------------------------------ */
@@ -20,6 +21,7 @@ body {
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--white);
+    text-align: center;
 }
 
 h1,
@@ -148,11 +150,14 @@ nav {
 
 /* Gallery ------------------------------------------------- */
 
+.gallery {
+    display: flex;
+    margin-bottom: 70px;
+}
+
 /* Take action --------------------------------------------- */
 
-.button-area {
-    text-align: center;
-}
+
 
 /* Buttons ------------------------------------------------- */
 
@@ -181,9 +186,8 @@ nav {
 }
 
 /* Contact ------------------------------------------------- */
-.contact {
-    text-align: center;
-}
+
+
 
 .contact h1 {
     margin-top: 50px;
@@ -235,4 +239,38 @@ input.checkbox {
 }
 
 /* Sponsors ------------------------------------------------ */
+
+.sponsors {
+    background-color: var(--light-orange);
+    margin-top: 0;
+}
+
+.sponsors h1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.logo-area {
+    padding: 0 20px 20px 20px;
+}
+
+.logo-row {
+    display: flex;
+    align-items: center;
+}
+
+.logo-column img {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
 /* Footer -------------------------------------------------- */
+
+/* For laptop screens and bigger */
+@media screen and (min-width: 1440px) {
+    .sponsor-logo {}
+}
