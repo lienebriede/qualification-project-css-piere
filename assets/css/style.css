@@ -12,10 +12,10 @@
     --white: #ffffff;
     --orange: #FFA800;
     --dark-grey: #2F4858;
-
+    --light-grey: #C4C4C466;
 }
 
-/* General styles -------------------------------------------------- */
+/* General styles ------------------------------------------ */
 body {
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
@@ -38,8 +38,13 @@ h2 {
     font-size: 18px;
 }
 
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grey);
+    font-size: 12px;
+}
 
-/* Header styles -------------------------------------------- */
+/* Header styles ------------------------------------------- */
 header {
     background-color: var(--white);
     padding: 0 20px;
@@ -89,7 +94,7 @@ header a {
     border-bottom: 3px solid var(--orange);
 }
 
-/* Nav bar styles ------------------------------------------- */
+/* Nav bar styles ------------------------------------------ */
 nav {
     position: absolute;
     background-color: var(--white);
@@ -112,8 +117,8 @@ nav {
     padding-top: 15px;
 }
 
-/* Main section ------------------------------------------- */
-
+/* Main section */
+/* About --------------------------------------------------- */
 .hero {
     position: relative;
     top: 0;
@@ -127,7 +132,7 @@ nav {
     width: 100%;
 }
 
-.play-btn {
+.play-video {
     position: absolute;
     top: 35%;
     left: 45%;
@@ -141,13 +146,19 @@ nav {
     padding: 100px 20px;
 }
 
+/* Gallery ------------------------------------------------- */
+
+/* Take action --------------------------------------------- */
+
 .button-area {
     text-align: center;
 }
 
-.btn-wide {
-    width: 233px;
-    height: 50px;
+/* Buttons ------------------------------------------------- */
+
+
+.btn {
+
     border-radius: 30px;
     border: none;
     background-color: var(--orange);
@@ -158,3 +169,70 @@ nav {
     margin-top: 50px;
     margin-bottom: 70px;
 }
+
+.btn-wide {
+    width: 233px;
+    height: 50px;
+}
+
+.btn-small {
+    width: 140px;
+    height: 48px;
+}
+
+/* Contact ------------------------------------------------- */
+.contact {
+    text-align: center;
+}
+
+.contact h1 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    text-align: left;
+    margin-left: 20px;
+}
+
+input,
+textarea {
+    background-color: var(--light-grey);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: var(--dark-grey);
+    padding-left: 10px;
+    border: none;
+    border-radius: 6px;
+    margin: 5px 20px;
+}
+
+input {
+    width: 280px;
+    height: 35px;
+
+}
+
+textarea {
+    width: 280px;
+    padding-top: 5px;
+}
+
+
+.agree-area {
+    margin-top: 10px;
+}
+
+input.checkbox {
+    float: left;
+    width: 16px;
+    height: 16px;
+}
+
+.agree-area p {
+    overflow: hidden;
+    padding-top: 2px;
+}
+
+/* Sponsors ------------------------------------------------ */
+/* Footer -------------------------------------------------- */

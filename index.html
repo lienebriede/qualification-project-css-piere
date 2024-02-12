@@ -53,7 +53,7 @@
         <section class="about">
             <div class="hero">
                 <img src="assets/img/SparkleVideo1.png" alt="Video" class="video">
-                <img src="assets/img/Vector.png" alt="Play button" class="play-btn">
+                <img src="assets/img/Vector.png" alt="Play button" class="play-video">
             </div>
 
             <div class="description">
@@ -70,38 +70,40 @@
             <div class="gallery">
             </div>
         </section>
-        <!--Action-->
+        <!--Take action-->
         <section class="button-area">
             <div class=btn-area-1>
                 <h2>Vēlies piepildīt savu sapni?</h2>
-                <button class="btn-wide">Sapņotājiem</button>
+                <button class="btn btn-wide">Sapņotājiem</button>
             </div>
             <div class=btn-area-2>
                 <h2>Vēlies palīdzēt kādam piepildīt sapni?</h2>
-                <button class="btn-wide">Uzņēmējiem</button>
+                <button class="btn btn-wide">Uzņēmējiem</button>
             </div>
         </section>
-        <!--Contact-->
+        <!--Contact form-->
         <section class="contact">
             <form class="contact-form" method="#" action="#">
                 <h1>Sazināties ar mums</h1>
-
-                <input type="text" name="name_surname" id="name_surname" class="text-input"
-                    placeholder="Vārds, Uzvārds*" required>
+                <input type="text" name="name_surname" class="text-input" placeholder="Vārds, Uzvārds*" required>
                 <br>
-
-                <input type="email" name="email" id="email" class="text-input" placeholder="E-pasts*" required>
+                <input type="email" name="email" class="text-input" placeholder="E-pasts*" required>
                 <br>
-
-                <input type="tel" name="phone" id="phone" placeholder="Telefons*" required>
+                <input type="tel" name="phone" placeholder="Telefons*" required>
                 <br>
-                <textarea name="message" id="message" class="message" cols="40" rows="5"
-                    placeholder="Jautājums, vai komentārs*"></textarea>
+                <textarea name="message" cols="40" rows="8" placeholder="Jautājums, vai komentārs*"></textarea>
                 <p>*obligāti aizpildāmie lauki</p>
-                <input type="checkbox" id="agree" name="agree" value="agree">
-                <p>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim,
-                    kamēr tas būs nepieciešams.</p>
-                <button class="button" type="submit">
+                <div class="agree-area">
+                    <input type="checkbox" class="checkbox" name="agree" value="agree">
+                    <p>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks
+                        saglabāti līdz
+                        brīdim,
+                        kamēr tas būs nepieciešams.</p>
+                </div>
+
+
+
+                <button class="btn btn-small" type="submit">
                     Sūtīt</button>
             </form>
         </section>
