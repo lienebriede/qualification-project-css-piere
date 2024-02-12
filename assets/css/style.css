@@ -18,7 +18,6 @@
 
 /* General styles ------------------------------------------ */
 body {
-    min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--white);
     text-align: center;
@@ -158,6 +157,15 @@ nav {
 .gallery {
     display: flex;
     margin-bottom: 70px;
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    flex-flow: nowrap;
+}
+
+.gallery img {
+    margin: 0, 0, 0, 0;
 }
 
 /* Take action --------------------------------------------- */
@@ -280,8 +288,9 @@ input.checkbox {
     padding: 40px 0 20px 20px;
 }
 
-.footer-container h3,
-p {
+.info h3,
+.info p,
+.copyright p {
     color: var(--white);
     text-align: left;
 
