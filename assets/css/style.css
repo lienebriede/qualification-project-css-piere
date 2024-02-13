@@ -127,9 +127,10 @@ nav {
 /* About --------------------------------------------------- */
 .hero {
     position: relative;
-    top: 0;
-    left: 0;
+
 }
+
+
 
 .video {
     position: relative;
@@ -140,9 +141,33 @@ nav {
 
 .play-video {
     position: absolute;
+    width: 50px;
+    height: 48.26px;
     top: 35%;
     left: 45%;
 
+}
+
+.divider {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    top: -1%;
+    left: 0%;
+}
+
+.divider-up {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    bottom: -1%;
+    left: 0%;
+}
+
+.divider-grey {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: -3%;
 }
 
 .description {
@@ -153,6 +178,11 @@ nav {
 }
 
 /* Gallery ------------------------------------------------- */
+
+.gallery {
+    position: relative;
+    margin-bottom: 100px;
+}
 
 .image-grid {
     --gap: 0px;
@@ -211,7 +241,10 @@ nav {
 }
 
 /* Contact ------------------------------------------------- */
-
+.contact-form {
+    margin-bottom: 100px;
+    ;
+}
 
 
 .contact h1 {
@@ -266,41 +299,61 @@ input.checkbox {
 /* Sponsors ------------------------------------------------ */
 
 .sponsors {
-    background-color: var(--light-orange);
-    margin-top: 0;
+    background: url(../img/OrangeRipBackground.png);
+    width: 100%;
+
 }
 
 .sponsors h1 {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    margin-top: 35%;
 }
+
 
 .logo-container {
     padding: 0 20px 50px 20px;
-    display: block;
+    display: inline-block;
     align-items: center;
 }
 
 .logo-1 {
-    padding-right: 10px;
+    width: 130px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.logo-2 {
+    width: 130px;
+    margin-bottom: 20px;
 }
 
 .logo-3 {
-    padding-right: 50px;
+    width: 130px;
 
 }
 
 .logo-4 {
-    padding-top: 30px;
+    width: 48px;
+    margin-left: 60px;
 }
-
-
 
 /* Footer -------------------------------------------------- */
 
 .footer-container {
     background-color: var(--dark-grey);
-    padding: 40px 0 20px 20px;
+    width: 100%;
+}
+
+.footer-text {
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.grey {
+
+    top: 30%;
 }
 
 .info h3,
@@ -315,14 +368,19 @@ input.checkbox {
     padding-bottom: 10px;
 }
 
-.logo-container {
-    text-align: left;
+
+
+.golden-logo {
+    width: 100px;
+    margin-top: 40px;
     margin-bottom: 20px;
 }
 
 .footer-container h3 {
     padding-bottom: 20px;
 }
+
+
 
 .copyright p {
     font-size: 11px;
@@ -356,14 +414,7 @@ input.checkbox {
 
 
 
-    .logo-1 {
-        padding-left: 60px;
-    }
 
-    .logo-2 {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
 }
 
 /* For small laptop screens and bigger */
