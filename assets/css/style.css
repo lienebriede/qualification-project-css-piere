@@ -154,19 +154,31 @@ nav {
 
 /* Gallery ------------------------------------------------- */
 
-.gallery {
-    display: flex;
-    margin-bottom: 70px;
-    display: flex;
-    gap: 0px;
-    align-items: center;
-    justify-content: center;
-    flex-flow: nowrap;
+.image-grid {
+    --gap: 0px;
+    --num-cols: 2;
+    --row-height: 100px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
 }
 
-.gallery img {
-    margin: 0, 0, 0, 0;
+.image-grid-row-2 {
+    grid-row: span 2;
 }
+
+
+.image-grid>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 /* Take action --------------------------------------------- */
 
@@ -263,21 +275,24 @@ input.checkbox {
     margin-bottom: 50px;
 }
 
-.logo-area {
-    padding: 0 20px 20px 20px;
-}
-
-.logo-row {
-    display: flex;
+.logo-container {
+    padding: 0 20px 50px 20px;
+    display: block;
     align-items: center;
 }
 
-.logo-column img {
-    margin-bottom: 20px;
+.logo-1 {
+    padding-right: 10px;
 }
 
+.logo-3 {
+    padding-right: 50px;
 
+}
 
+.logo-4 {
+    padding-top: 30px;
+}
 
 
 
@@ -314,7 +329,6 @@ input.checkbox {
 }
 
 
-
 .socials {
     padding: 30px 0 30px 0;
     text-align: left;
@@ -327,7 +341,30 @@ input.checkbox {
     padding-right: 30px;
 }
 
-/* For laptop screens and bigger */
-@media screen and (min-width: 1440px) {
-    .sponsor-logo {}
+/* For tablet-size screens and bigger */
+@media screen and (min-width: 768px) {
+
+    .image-grid {
+        --gap: 0px;
+        --num-cols: 4;
+        --row-height: 150px;
+    }
+
+    .image-grid>*:nth-child(3) {
+        order: 5;
+    }
+
+
+
+    .logo-1 {
+        padding-left: 60px;
+    }
+
+    .logo-2 {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
+
+/* For small laptop screens and bigger */
+@media screen and (min-width: 1024px) {}
