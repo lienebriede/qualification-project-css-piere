@@ -85,7 +85,7 @@ header a {
 }
 
 .menu>li {
-    padding-top: 40px;
+    padding-top: 45px;
     display: flex;
     justify-content: center;
 }
@@ -94,6 +94,9 @@ header a {
     text-align: center;
 }
 
+.languages>span {
+    padding-right: 20px;
+}
 
 .active {
     font-weight: bold;
@@ -130,8 +133,6 @@ nav {
 
 }
 
-
-
 .video {
     position: relative;
     top: 0;
@@ -141,10 +142,9 @@ nav {
 
 .play-video {
     position: absolute;
-    width: 50px;
-    height: 48.26px;
-    top: 35%;
-    left: 45%;
+    width: 25%;
+    top: 30%;
+    left: 40%;
 
 }
 
@@ -209,11 +209,6 @@ nav {
 }
 
 
-
-/* Take action --------------------------------------------- */
-
-
-
 /* Buttons ------------------------------------------------- */
 
 
@@ -242,10 +237,8 @@ nav {
 
 /* Contact ------------------------------------------------- */
 .contact-form {
-    margin-bottom: 100px;
-    ;
+    margin-bottom: 70px;
 }
-
 
 .contact h1 {
     margin-top: 50px;
@@ -280,7 +273,6 @@ textarea {
     padding-top: 5px;
 }
 
-
 .agree-area {
     margin-top: 10px;
 }
@@ -314,7 +306,7 @@ input.checkbox {
 .logo-container {
     padding: 0 20px 50px 20px;
     display: inline-block;
-    align-items: center;
+
 }
 
 .logo-1 {
@@ -351,11 +343,6 @@ input.checkbox {
     padding-bottom: 30px;
 }
 
-.grey {
-
-    top: 30%;
-}
-
 .info h3,
 .info p,
 .copyright p {
@@ -368,8 +355,6 @@ input.checkbox {
     padding-bottom: 10px;
 }
 
-
-
 .golden-logo {
     width: 100px;
     margin-top: 40px;
@@ -380,12 +365,9 @@ input.checkbox {
     padding-bottom: 20px;
 }
 
-
-
 .copyright p {
     font-size: 11px;
 }
-
 
 .socials {
     padding: 30px 0 30px 0;
@@ -411,8 +393,6 @@ input.checkbox {
     .image-grid>*:nth-child(3) {
         order: 5;
     }
-
-
 
 
 }
