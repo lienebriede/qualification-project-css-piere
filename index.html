@@ -101,20 +101,26 @@
         <section class="contact">
             <form class="contact-form" method="#" action="#">
                 <h1>Sazināties ar mums</h1>
-                <input type="text" name="name_surname" class="text-input" placeholder="Vārds, Uzvārds*" required>
-                <br>
-                <input type="email" name="email" class="text-input" placeholder="E-pasts*" required>
-                <br>
-                <input type="tel" name="phone" placeholder="Telefons*" required>
-                <br>
-                <textarea name="message" cols="40" rows="8" placeholder="Jautājums, vai komentārs*"></textarea>
-                <p>*obligāti aizpildāmie lauki</p>
-                <div class="agree-area">
-                    <input type="checkbox" class="checkbox" name="agree" value="agree">
-                    <p>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks
-                        saglabāti līdz
-                        brīdim,
-                        kamēr tas būs nepieciešams.</p>
+                <div class="form-text-area">
+                    <input type="text" name="name_surname" class="text-input half-width-input"
+                        placeholder="Vārds, Uzvārds*" required>
+                    <br class="hide-tablet">
+                    <input type="email" name="email" class="text-input half-width-input" placeholder="E-pasts*"
+                        required>
+                    <br>
+                    <input type="tel" name="phone" placeholder="Telefons*" required>
+                    <br>
+                    <textarea name="message" cols="40" rows="8" placeholder="Jautājums, vai komentārs*"></textarea>
+
+                    <p>*obligāti aizpildāmie lauki</p>
+                    <div class="agree-area">
+                        <input type="checkbox" class="checkbox" name="agree" value="agree">
+                        <p>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks
+                            saglabāti līdz
+                            brīdim,
+                            kamēr tas būs nepieciešams.</p>
+                    </div>
+
                 </div>
                 <button class="btn btn-small" type="submit">
                     Sūtīt</button>
