@@ -23,6 +23,10 @@ body {
     text-align: center;
 }
 
+.hide-mobile {
+    display: none;
+}
+
 h1,
 h2 {
     font-family: 'Oswald', sans-serif;
@@ -231,21 +235,23 @@ nav {
 
 /* Contact ------------------------------------------------- */
 
-.contact-form {
-    width: 90%;
-    margin-bottom: 70px;
-    background-color: aqua;
-    display: inline-block;
+.contact-area {
+    display: block;
+    text-align: center;
 }
 
+.contact-form {
+    display: inline-block;
+    width: 90%;
+    margin-bottom: 70px;
+}
 
-
-.contact h1 {
+.contact-area h1 {
     margin-top: 50px;
     margin-bottom: 30px;
 }
 
-.contact p {
+.contact-area p {
     text-align: left;
     margin-left: 20px;
 }
@@ -260,22 +266,15 @@ textarea {
     border: none;
     border-radius: 6px;
     margin: 5px 20px;
+    width: 80%;
 }
 
 input {
-    width: 100%;
     height: 35px;
 }
 
 textarea {
-    width: 280px;
     padding-top: 5px;
-}
-
-
-
-.agree-area {
-    margin-top: 10px;
 }
 
 input.checkbox {
@@ -289,15 +288,30 @@ input.checkbox {
     padding-top: 2px;
 }
 
+.agree-area {
+    margin-top: 10px;
+}
+
+.form-lower-area {
+    display: block;
+    text-align: center;
+}
+
+.form-lower-area>div,
+.form-lower-area>p {
+    display: inline-block;
+    width: 80%;
+}
+
 /* Sponsors ------------------------------------------------ */
 
-.sponsors {
+.sponsors-area {
     background: url(../img/OrangeRipBackground.png);
     width: 100%;
 
 }
 
-.sponsors h1 {
+.sponsors-area h1 {
     margin-top: 40px;
     margin-bottom: 70px;
     margin-top: 35%;
@@ -307,7 +321,6 @@ input.checkbox {
 .logo-container {
     padding: 0 20px 50px 20px;
     display: inline-block;
-
 }
 
 .logo-1 {
@@ -332,13 +345,15 @@ input.checkbox {
 }
 
 /* Footer -------------------------------------------------- */
-
-.footer-container {
-    background-color: var(--dark-grey);
-    width: 100%;
+footer {
+    display: block;
+    text-align: center;
 }
 
-.footer-text {
+.footer-container {
+    display: inline-block;
+    background-color: var(--dark-grey);
+    width: 100%;
     text-align: left;
     padding-left: 20px;
     padding-bottom: 30px;
@@ -399,6 +414,10 @@ input.checkbox {
         display: none;
     }
 
+    .hide-mobile {
+        display: block;
+    }
+
     /* Nav bar --------------------------------------------- */
     header {
         padding: 0 40px;
@@ -450,25 +469,79 @@ input.checkbox {
     }
 
     input {
-        width: 608px;
+        width: 80%;
         height: 40px;
         font-size: 18px;
     }
 
     textarea {
-        width: 608px;
+        width: 80%;
         font-size: 18px;
     }
 
     .half-width-input {
-        width: 300px;
+        width: 40%;
         margin: 5px auto;
     }
 
-    .form p {
+    .form-area p {
         font-size: 14px;
     }
 
+    .sponsors-area h1 {
+        margin-top: 15%;
+    }
+
+    .logos-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo-1,
+    .logo-2 {
+        margin-top: 20px;
+        margin-right: 40px;
+
+    }
+
+    /* Footer ---------------------------------------------- */
+    .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .column p,
+    .column h3 {
+        color: var(--white);
+        font-size: 18px;
+    }
+
+    .golden-logo {
+        width: 50%;
+        padding-bottom: 15px;
+    }
+
+    .column {
+        margin-left: 50px;
+    }
+
+    .column-2 {
+        margin-top: 50px;
+    }
+
+    .nav2 {
+        margin-top: 50px;
+    }
+
+    .copyright {
+        display: block;
+        margin-left: 50px;
+    }
+
+    .copyright p {
+        font-size: 16px;
+    }
 
 }
 

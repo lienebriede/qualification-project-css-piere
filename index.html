@@ -98,20 +98,19 @@
             </div>
         </section>
         <!--Contact form-->
-        <section class="contact">
+        <section class="contact-area">
             <form class="contact-form" method="#" action="#">
                 <h1>Sazināties ar mums</h1>
-                <div class="form-text-area">
-                    <input type="text" name="name_surname" class="text-input half-width-input"
-                        placeholder="Vārds, Uzvārds*" required>
-                    <br class="hide-tablet">
-                    <input type="email" name="email" class="text-input half-width-input" placeholder="E-pasts*"
-                        required>
-                    <br>
-                    <input type="tel" name="phone" placeholder="Telefons*" required>
-                    <br>
-                    <textarea name="message" cols="40" rows="8" placeholder="Jautājums, vai komentārs*"></textarea>
 
+                <input type="text" name="name_surname" class="text-input half-width-input" placeholder="Vārds, Uzvārds*"
+                    required>
+                <br class="hide-tablet">
+                <input type="email" name="email" class="text-input half-width-input" placeholder="E-pasts*" required>
+                <br>
+                <input type="tel" name="phone" placeholder="Telefons*" required>
+                <br>
+                <textarea name="message" cols="40" rows="8" placeholder="Jautājums, vai komentārs*"></textarea>
+                <div class="form-lower-area">
                     <p>*obligāti aizpildāmie lauki</p>
                     <div class="agree-area">
                         <input type="checkbox" class="checkbox" name="agree" value="agree">
@@ -120,20 +119,21 @@
                             brīdim,
                             kamēr tas būs nepieciešams.</p>
                     </div>
-
                 </div>
                 <button class="btn btn-small" type="submit">
                     Sūtīt</button>
             </form>
         </section>
         <!--Sponsor logos-->
-        <section class="sponsors">
+        <section class="sponsors-area">
             <div class="logo-container">
                 <h1>Atbalstītāji</h1>
-                <img src="assets/img/teikumsLogo.png" alt="Teikums logo" class="logo-1">
-                <img src="assets/img/semLogo.png" alt="SEM logo" class="logo-2">
-                <img src="assets/img/CitybeeLogo.png" alt="Citybee logo" class="logo-3">
-                <img src="assets/img/LinearisLogo.png" alt="Linearis logo" class="logo-4">
+                <div class="logos-wrapper">
+                    <img src="assets/img/teikumsLogo.png" alt="Teikums logo" class="logo-1">
+                    <img src="assets/img/semLogo.png" alt="SEM logo" class="logo-2">
+                    <img src="assets/img/CitybeeLogo.png" alt="Citybee logo" class="logo-3">
+                    <img src="assets/img/LinearisLogo.png" alt="Linearis logo" class="logo-4">
+                </div>
             </div>
             <div>
                 <img src="assets/img/GreyRip.png" class="divider-grey">
@@ -142,32 +142,47 @@
     </main>
     <!--Footer-->
     <footer>
-        <div class="footer-container">
-            <div class="footer-text">
+        <div class="footer-container columns">
+            <div class="column">
                 <img src="assets/img/GoldenLogo.png" alt="Sparkle Heart logo" class="golden-logo">
                 <div class="info">
                     <h3>Juris Gogulis</h3>
                     <p>juris.gogulis@sparkleheart.org</p>
                     <p>+37126890032</p>
                     <p>Biķernieku iela 24a - 5, LV-1006</p>
-                    <p><strong>Skatīt rekvizītus</strong></p>
+                    <p class="hide-tablet"><strong>Skatīt rekvizītus</strong></p>
+                    <div class="socials">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                            aria-label="visit our Facebook page (opens in a new tab)">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                            aria-label="visit our Instagram page (opens in a new tab)">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="socials">
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                        aria-label="visit our Facebook page (opens in a new tab)">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                        aria-label="visit our Instagram page (opens in a new tab)">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
+            </div>
+            <div class="column column-2 hide-mobile">
+                <div>
+                    <h3>Biedrība SparkleHeart</h3>
+                    <p>Reģistrācijas nr.XXXXXXXXX</p>
+                    <p>Banka: XXXXXXXXXXXX</p>
+                    <p>LVXXHABAXXXXXXXXXX</p>
                 </div>
-                <div class="copyright">
-                    <p>
-                        <i class="fa-regular fa-copyright"></i> SparkleHeart 2020. Visas tiesības aizsargātas.
-                    </p>
-                    <p>Privātuma politika</p>
+                <div class="nav2">
+                    <p>Ideja</p>
+                    <p>Piesaki Sapni</p>
+                    <p>Uzņēmējiem</p>
+                    <p>Sapņu banka</p>
+                    <p>Sapņus atbalsta</p>
+                    <p>Iedvesmas stāsti</p>
                 </div>
+            </div>
+            <div class="copyright">
+                <p><i class="fa-regular fa-copyright"></i> SparkleHeart 2020. Visas tiesības aizsargātas.
+                </p>
+                <p>Privātuma politika</p>
             </div>
         </div>
     </footer>
