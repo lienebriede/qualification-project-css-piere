@@ -201,7 +201,6 @@ nav {
     grid-row: span 2;
 }
 
-
 .image-grid>img {
     width: 100%;
     height: 100%;
@@ -308,7 +307,6 @@ input.checkbox {
 .sponsors-area {
     background: url(../img/OrangeRipBackground.png);
     width: 100%;
-
 }
 
 .sponsors-area h1 {
@@ -316,7 +314,6 @@ input.checkbox {
     margin-bottom: 70px;
     margin-top: 35%;
 }
-
 
 .logo-container {
     padding: 0 20px 50px 20px;
@@ -336,7 +333,6 @@ input.checkbox {
 
 .logo-3 {
     width: 130px;
-
 }
 
 .logo-4 {
@@ -345,17 +341,13 @@ input.checkbox {
 }
 
 /* Footer -------------------------------------------------- */
-footer {
-    display: block;
-    text-align: center;
-}
 
 .footer-container {
     display: inline-block;
     background-color: var(--dark-grey);
     width: 100%;
     text-align: left;
-    padding-left: 20px;
+    padding-left: 40px;
     padding-bottom: 30px;
 }
 
@@ -364,7 +356,6 @@ footer {
 .copyright p {
     color: var(--white);
     text-align: left;
-
 }
 
 .footer-container p {
@@ -535,7 +526,6 @@ footer {
     }
 
     .copyright {
-        display: block;
         margin-left: 50px;
     }
 
@@ -546,4 +536,20 @@ footer {
 }
 
 /* For small laptop screens and bigger */
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+
+    .description {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .button-area {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .contact-area {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
