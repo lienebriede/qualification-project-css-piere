@@ -13,7 +13,6 @@
     --orange: #FFA800;
     --dark-grey: #2F4858;
     --light-grey: #C4C4C466;
-    --light-orange: #FFCB66;
 }
 
 /* General styles ------------------------------------------ */
@@ -125,7 +124,6 @@ nav {
 /* About --------------------------------------------------- */
 .hero {
     position: relative;
-
 }
 
 .video {
@@ -139,8 +137,7 @@ nav {
     position: absolute;
     width: 15%;
     top: 30%;
-    left: 40%;
-
+    left: 45%;
 }
 
 .divider {
@@ -205,7 +202,6 @@ nav {
 /* Buttons ------------------------------------------------- */
 
 .btn {
-
     border-radius: 30px;
     border: none;
     background-color: var(--orange);
@@ -237,7 +233,7 @@ nav {
 .contact-form {
     display: inline-block;
     width: 90%;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .contact-area h1 {
@@ -377,6 +373,7 @@ input.checkbox {
 @media screen and (min-width: 768px) {
 
     /* General styles -------------------------------------- */
+
     p {
         font-size: 18px;
     }
@@ -384,6 +381,10 @@ input.checkbox {
     h1 {
         font-size: 30px;
         margin-bottom: 50px;
+    }
+
+    h2 {
+        font-size: 24px;
     }
 
     .hide-tablet {
@@ -395,6 +396,7 @@ input.checkbox {
     }
 
     /* Header and nav bar -------------------------------------- */
+
     header {
         padding: 0 40px;
     }
@@ -424,10 +426,18 @@ input.checkbox {
     }
 
     /* Main section ---------------------------------------- */
+
+    .description {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
     .button-area {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     .image-grid {
@@ -438,6 +448,10 @@ input.checkbox {
 
     .image-grid>*:nth-child(3) {
         order: 5;
+    }
+
+    .contact-form {
+        margin-bottom: 0;
     }
 
     input {
@@ -460,8 +474,8 @@ input.checkbox {
         font-size: 14px;
     }
 
-    .sponsors-area h1 {
-        margin-top: 15%;
+    .logo-container {
+        padding-bottom: 50px;
     }
 
     .logos-grid {
@@ -476,7 +490,6 @@ input.checkbox {
     }
 
     /* Footer ---------------------------------------------- */
-
 
     .footer-columns {
         display: grid;
@@ -505,16 +518,22 @@ input.checkbox {
 @media screen and (min-width: 1440px) {
 
     /* General styles -------------------------------------- */
+
+    p {
+        font-size: 20px;
+    }
+
     h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
 
     h2,
     h3 {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     /* Header and nav bar ----------------------------------- */
+
     nav {
         display: block;
         position: relative;
@@ -528,7 +547,7 @@ input.checkbox {
 
     .menu {
         display: flex;
-        font-size: 18px;
+        font-size: 20px;
         padding-bottom: 30px;
     }
 
@@ -541,23 +560,37 @@ input.checkbox {
     }
 
     /* Main section ---------------------------------------- */
+
+    .play-video {
+        width: 15%;
+        top: 30%;
+        left: 45%;
+    }
+
     .description {
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
     .button-area {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin: 200px 50px 100px 50px;
     }
 
-    .contact-area {
-        margin-left: 15%;
-        margin-right: 15%;
+    .contact-form {
+        margin-bottom: 100px;
     }
 
     .logo-img {
         width: 15%;
         margin-right: 60px;
+    }
+
+    .golden-logo {
+        width: 40%;
+        padding-left: 50px;
+    }
+
+    .info {
+        padding-top: 50px;
     }
 }
